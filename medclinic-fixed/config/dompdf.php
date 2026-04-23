@@ -1,0 +1,36 @@
+<?php
+// config/dompdf.php — DomPDF configuration for Laravel
+return [
+    'show_warnings'   => false,
+    'orientation'     => 'portrait',
+    'defines'         => [
+        'DOMPDF_ENABLE_REMOTE'    => true,
+        'DOMPDF_ENABLE_CSS_FLOAT' => true,
+        'DOMPDF_ENABLE_FONTSUBSETTING' => true,
+        'DOMPDF_DEFAULT_MEDIA_TYPE'    => 'print',
+        'DOMPDF_DEFAULT_PAPER_SIZE'    => 'a4',
+        'DOMPDF_DEFAULT_FONT'          => 'DejaVu Sans',
+        'DOMPDF_DPI'                   => 96,
+        'DOMPDF_ENABLE_PHP'            => false,
+        'DOMPDF_ENABLE_JAVASCRIPT'     => false,
+    ],
+    'options' => [
+        'font_dir'                => storage_path('fonts'),
+        'font_cache'              => storage_path('fonts'),
+        'temp_dir'                => sys_get_temp_dir(),
+        'chroot'                  => realpath(base_path()),
+        'allowed_remote_hosts'    => null,
+        'log_output_file'         => null,
+        'default_media_type'      => 'print',
+        'default_paper_size'      => 'a4',
+        'default_paper_orientation' => 'portrait',
+        'default_font'            => 'DejaVu Sans',
+        'dpi'                     => 96,
+        'enable_php'              => false,
+        'enable_javascript'       => false,
+        'enable_remote'           => true,
+        'font_height_ratio'       => 1.1,
+        'enable_css_float'        => true,
+        'enable_html5_parser'     => true,
+    ],
+];

@@ -1,0 +1,77 @@
+version: '3.8'
+
+# ── docker-compose.yml — Développement local avec Docker ──────
+services:
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: medclinic_app
+    restart: unless-stopped
+    ports:
+      - "8000:80"
+    environment:
+      APP_ENV: local
+      APP_DEBUG: "true"
+      DB_CONNECTION: mysql
+      DB_HOST: db
+      DB_PORT: 3306
+      DB_DATABASE: medclinic
+      DB_USERNAME: medclinic
+      DB_PASSWORD: secret
+      MAIL_MAILER: smtp
+      MAIL_HOST: mailhog
+      MAIL_PORT: 1025
+    volumes:
+      - .:/var/www/html
+      - /var/www/html/vendor
+      - /var/www/html/node_modules
+    depends_on:
+      db:
+        condition: service_healthy
+
+  db:
+    image: mysql:8.0
+    container_name: medclinic_db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: medclinic
+      MYSQL_USER: medclinic
+      MYSQL_PASSWORD: secret
+    volumes:
+      - mysql_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      timeout: 10s
+      retries: 5
+
+  # phpMyAdmin pour gérer la BDD visuellement
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: medclinic_phpmyadmin
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    environment:
+      PMA_HOST: db
+      PMA_USER: root
+      PMA_PASSWORD: rootpassword
+    depends_on:
+      - db
+
+  # Mailhog pour capturer les emails en dev
+  mailhog:
+    image: mailhog/mailhog:latest
+    container_name: medclinic_mailhog
+    restart: unless-stopped
+    ports:
+      - "1025:1025"   # SMTP
+      - "8025:8025"   # Interface Web
+
+volumes:
+  mysql_data:
+    driver: local
