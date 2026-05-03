@@ -81,6 +81,7 @@
                         <a href="{{ route('admin.patients.edit', $patient) }}" class="btn btn-sm btn-light" title="Modifier">
                             <i class="bi bi-pencil"></i>
                         </a>
+                        @if(auth()->user()->isAdmin())
                         <form method="POST" action="{{ route('admin.patients.destroy', $patient) }}"
                               class="d-inline"
                               onsubmit="return confirm('Supprimer ce patient ?')">
@@ -89,6 +90,7 @@
                                 <i class="bi bi-trash"></i>
                             </button>
                         </form>
+                        @endif
                     </td>
                 </tr>
                 @empty

@@ -74,8 +74,8 @@
                     <tbody>
                         @forelse($pendingAppts as $appt)
                         <tr>
-                            <td class="fw-semibold">{{ $appt->patient->full_name }}</td>
-                            <td>Dr. {{ $appt->doctor->name }}</td>
+                            <td class="fw-semibold">{{ $appt->patient?->full_name ?? 'Patient inconnu' }}</td>
+                            <td>Dr. {{ $appt->doctor?->name ?? '—' }}</td>
                             <td>{{ $appt->appointment_date->format('d/m H:i') }}</td>
                             <td>
                                 <button class="btn btn-xs btn-success px-2 py-0"

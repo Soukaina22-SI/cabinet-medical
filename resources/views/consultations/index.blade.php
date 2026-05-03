@@ -74,19 +74,19 @@
                             <div class="avatar-initials"
                                  style="width:34px;height:34px;font-size:.75rem;font-weight:700;
                                         background:#dbeafe;color:#1d4ed8">
-                                {{ strtoupper(substr($c->patient->first_name,0,1).substr($c->patient->last_name,0,1)) }}
+                                {{ $c->patient ? strtoupper(substr($c->patient?->first_name ?? "?",0,1).substr($c->patient?->last_name ?? "",0,1)) : '?' }}
                             </div>
                             <div>
-                                <div class="fw-semibold small">{{ $c->patient->full_name }}</div>
-                                <small class="text-muted">{{ $c->patient->age }} ans</small>
+                                <div class="fw-semibold small">{{ $c->patient?->full_name ?? 'Patient inconnu' }}</div>
+                                <small class="text-muted">{{ $c->patient?->age ?? "—" }} ans</small>
                             </div>
                         </div>
                     </td>
                     <td>
                         <div class="d-flex align-items-center gap-2">
-                            <img src="{{ $c->doctor->avatar_url }}" class="rounded-circle"
+                            <img src="{{ $c->doctor?->avatar_url ?? '' }}" class="rounded-circle"
                                  width="28" height="28">
-                            <small>Dr. {{ $c->doctor->name }}</small>
+                            <small>Dr. {{ $c->doctor?->name ?? '—' }}</small>
                         </div>
                     </td>
                     <td>

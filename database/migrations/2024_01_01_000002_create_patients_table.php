@@ -14,7 +14,7 @@ return new class extends Migration {
             $table->foreignId('user_id')->nullable()->constrained()->nullOnDelete();
             $table->string('first_name');
             $table->string('last_name');
-           $table->string('cin', 191)->unique();
+            $table->string('cin', 191)->nullable()->unique();
             $table->string('phone');
             $table->string('email')->nullable();
             $table->date('date_of_birth');

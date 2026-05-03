@@ -78,9 +78,9 @@
                     @forelse($appointments as $appt)
                     <tr>
                         <td>
-                            <span class="fw-semibold">{{ $appt->patient->full_name }}</span>
+                            <span class="fw-semibold">{{ $appt->patient?->full_name ?? 'Patient inconnu' }}</span>
                         </td>
-                        <td>Dr. {{ $appt->doctor->name }}</td>
+                        <td>Dr. {{ $appt->doctor?->name ?? '—' }}</td>
                         <td>
                             <span class="fw-semibold">{{ $appt->appointment_date->format('d/m/Y') }}</span>
                             <span class="badge bg-light text-dark ms-1">{{ $appt->appointment_date->format('H:i') }}</span>

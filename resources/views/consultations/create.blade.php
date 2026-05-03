@@ -13,7 +13,7 @@
     <div>
         <h5 class="fw-bold mb-0">Nouvelle consultation</h5>
         <p class="text-muted small mb-0">
-            Patient: <strong>{{ $appointment->patient->full_name }}</strong> —
+            Patient: <strong>{{ $appointment->patient?->full_name ?? 'Patient inconnu' }}</strong> —
             RDV: {{ $appointment->appointment_date->format('d/m/Y à H:i') }}
         </p>
     </div>

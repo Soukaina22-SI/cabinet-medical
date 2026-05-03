@@ -35,14 +35,24 @@
     <div class="row g-3">
         <div class="col-md-6">
             <label class="form-label small fw-semibold">Patient *</label>
-            <select name="patient_id" id="patientSelect" class="form-select" required>
-                <option value="">-- Sélectionner un patient --</option>
-                @foreach($patients as $p)
-                    <option value="{{ $p->id }}" {{ request('patient_id') == $p->id || old('patient_id') == $p->id ? 'selected' : '' }}>
-                        {{ $p->full_name }} ({{ $p->cin ?? $p->phone }})
-                    </option>
-                @endforeach
-            </select>
+            @if(auth()->user()->isPatient() && isset($selectedPatientId) && $selectedPatientId)
+                {{-- Patient voit uniquement son propre nom --}}
+                <input type="hidden" name="patient_id" value="{{ $selectedPatientId }}">
+                @php $selfP = $patients->firstWhere('id', $selectedPatientId); @endphp
+                <div class="form-control bg-light d-flex align-items-center gap-2" style="cursor:default">
+                    <i class="bi bi-person-circle text-primary"></i>
+                    <span>{{ $selfP?->full_name ?? auth()->user()->name }}</span>
+                </div>
+            @else
+                <select name="patient_id" id="patientSelect" class="form-select" required>
+                    <option value="">-- Sélectionner un patient --</option>
+                    @foreach($patients as $p)
+                        <option value="{{ $p->id }}" {{ request('patient_id') == $p->id || old('patient_id') == $p->id ? 'selected' : '' }}>
+                            {{ $p->full_name }} ({{ $p->cin ?? $p->phone }})
+                        </option>
+                    @endforeach
+                </select>
+            @endif
         </div>
         <div class="col-md-6">
             <label class="form-label small fw-semibold">Médecin *</label>

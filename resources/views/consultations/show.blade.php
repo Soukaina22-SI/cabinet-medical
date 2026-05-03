@@ -17,7 +17,7 @@
             <h5 class="fw-bold mb-0">Consultation #{{ str_pad($consultation->id, 5, '0', STR_PAD_LEFT) }}</h5>
             <p class="text-muted small mb-0">
                 {{ $consultation->created_at->translatedFormat('l d F Y') }} —
-                Dr. {{ $consultation->doctor->name }}
+                Dr. {{ $consultation->doctor?->name ?? '—' }}
             </p>
         </div>
     </div>
@@ -37,10 +37,10 @@
             <div class="d-flex align-items-center gap-2 mb-3">
                 <div class="rounded-circle d-flex align-items-center justify-content-center fw-bold"
                      style="width:44px;height:44px;background:#dbeafe;color:#1d4ed8">
-                    {{ strtoupper(substr($consultation->patient->first_name,0,1).substr($consultation->patient->last_name,0,1)) }}
+                    {{ $consultation->patient ? strtoupper(substr($consultation->patient?->first_name ?? '?',0,1).substr($consultation->patient?->last_name ?? '',0,1)) : '?' }}
                 </div>
                 <div>
-                    <div class="fw-bold">{{ $consultation->patient->full_name }}</div>
+                    <div class="fw-bold">{{ $consultation->patient?->full_name ?? 'Patient inconnu' }}</div>
                     <small class="text-muted">{{ $consultation->patient->age }} ans</small>
                 </div>
             </div>

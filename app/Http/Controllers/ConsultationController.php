@@ -8,44 +8,23 @@ use Illuminate\Http\Request;
 
 class ConsultationController extends Controller
 {
-    public function index(Request $request)
+    public function index(\Illuminate\Http\Request $request)
     {
-        $query = Consultation::with(['patient', 'doctor', 'prescription.items']);
-
-        // الطبيب يرى فقط consultations الخاصة به
-        if (auth()->user()->isDoctor()) {
-            $query->where('doctor_id', auth()->id());
-        }
-
-        // فلتر البحث بالمريض — لكن لا يتجاوز فلتر الطبيب
-        if ($s = $request->search) {
-            $query->whereHas('patient', fn($q) => $q->search($s));
-        }
-
-        // فلتر الطبيب — فقط للأدمين والسكرتير (الطبيب مقيّد أصلاً)
-        if ($d = $request->doctor_id && !auth()->user()->isDoctor()) {
-            $query->where('doctor_id', $request->doctor_id);
-        }
-
-        if ($dt = $request->date) {
-            $query->whereDate('created_at', $dt);
-        }
-
+        $query = Consultation::with(['patient', 'doctor', 'prescription.items'])->whereHas('patient')->whereHas('doctor');
+        if (auth()->user()->isDoctor()) { $query->where('doctor_id', auth()->id()); }
+        if ($s = $request->search) { $query->whereHas('patient', fn($q) => $q->search($s)); }
+        if ($d = $request->doctor_id) { $query->where('doctor_id', $d); }
+        if ($dt = $request->date) { $query->whereDate('created_at', $dt); }
         $consultations = $query->latest()->paginate(15);
-
-        // الطبيب لا يحتاج قائمة الأطباء (فلتر مخفي عنه)
-        $doctors = auth()->user()->isDoctor()
-            ? collect()
-            : User::doctors()->get();
-
+        $doctors = \App\Models\User::doctors()->get();
         return view('consultations.index', compact('consultations', 'doctors'));
     }
 
     public function create(Appointment $appointment)
     {
-        // ✅ تحقق مباشر بدل authorize() الذي يحتاج Policy
-        if (!auth()->user()->isDoctor()) {
-            abort(403, 'Seul un médecin peut créer une consultation.');
+        // Allow admin, doctor, secretary
+        if (!in_array(auth()->user()->role, ['admin', 'medecin', 'secretaire'])) {
+            abort(403);
         }
 
         if ($appointment->consultation) {
@@ -57,11 +36,6 @@ class ConsultationController extends Controller
 
     public function store(Request $request, Appointment $appointment)
     {
-        // ✅ تحقق مباشر بدل authorize()
-        if (!auth()->user()->isDoctor()) {
-            abort(403, 'Seul un médecin peut enregistrer une consultation.');
-        }
-
         $validated = $request->validate([
             'symptoms'       => 'required|string',
             'diagnosis'      => 'required|string',
@@ -100,7 +74,7 @@ class ConsultationController extends Controller
             }
 
             // Generate PDF
-            $pdf  = Pdf::loadView('prescriptions.pdf', compact('prescription'));
+            $pdf = Pdf::loadView('prescriptions.pdf', compact('prescription'));
             $path = 'prescriptions/prescription_' . $prescription->id . '.pdf';
             \Storage::put('public/' . $path, $pdf->output());
             $prescription->update(['pdf_path' => $path]);

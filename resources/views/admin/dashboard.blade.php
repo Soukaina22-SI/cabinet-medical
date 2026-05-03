@@ -146,14 +146,14 @@
                                 <div class="d-flex align-items-center gap-2">
                                     <div class="rounded-circle d-flex align-items-center justify-content-center"
                                          style="width:32px;height:32px;background:#dbeafe;color:#1d4ed8;font-size:.75rem;font-weight:700">
-                                        {{ strtoupper(substr($appt->patient->first_name, 0, 1) . substr($appt->patient->last_name, 0, 1)) }}
+                                        {{ $appt->patient ? strtoupper(substr($appt->patient?->first_name ?? '?',0,1).substr($appt->patient?->last_name ?? '',0,1)) : '?' }}
                                     </div>
                                     <div>
-                                        <div class="fw-semibold small">{{ $appt->patient->full_name }}</div>
+                                        <div class="fw-semibold small">{{ $appt->patient?->full_name ?? 'Patient inconnu' }}</div>
                                     </div>
                                 </div>
                             </td>
-                            <td><small>Dr. {{ $appt->doctor->name }}</small></td>
+                            <td><small>Dr. {{ $appt->doctor?->name ?? '—' }}</small></td>
                             <td><small>{{ $appt->appointment_date->format('d/m/Y H:i') }}</small></td>
                             <td>{!! $appt->status_badge !!}</td>
                         </tr>

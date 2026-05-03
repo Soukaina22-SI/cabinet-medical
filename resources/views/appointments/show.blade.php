@@ -20,17 +20,34 @@
             </p>
         </div>
     </div>
-    <div class="d-flex gap-2 align-items-center">
+    <div class="d-flex gap-2 align-items-center flex-wrap">
         {!! $appointment->status_badge !!}
-        @if(!$appointment->isCancelled())
-        <a href="{{ route('appointments.edit', $appointment) }}" class="btn btn-sm btn-outline-primary">
-            <i class="bi bi-pencil me-1"></i>Modifier
-        </a>
-        @endif
-        @if($appointment->isConfirmed() && !$appointment->consultation && auth()->user()->isDoctor())
-        <a href="{{ route('consultations.create', $appointment) }}" class="btn btn-sm btn-success">
-            <i class="bi bi-clipboard2-pulse me-1"></i>Démarrer consultation
-        </a>
+
+        @if(auth()->user()->isDoctor() || auth()->user()->isAdmin() || auth()->user()->isSecretary())
+            @if(!$appointment->isCancelled())
+            <a href="{{ route('appointments.edit', $appointment) }}" class="btn btn-sm btn-outline-primary">
+                <i class="bi bi-pencil me-1"></i>Modifier
+            </a>
+            @endif
+
+            {{-- 🔔 Bouton rappel email --}}
+            @if($appointment->isConfirmed() && $appointment->patient?->email)
+            <form method="POST" action="{{ route('appointments.send-reminder', $appointment) }}" class="d-inline">
+                @csrf
+                <button type="submit" class="btn btn-sm btn-outline-warning"
+                        onclick="return confirm('Envoyer un email de rappel à {{ $appointment->patient?->email }} ?')"
+                        title="Envoyer rappel email">
+                    <i class="bi bi-bell me-1"></i>
+                    {{ $appointment->reminder_sent ? 'Rappel renvoyé' : 'Envoyer rappel' }}
+                </button>
+            </form>
+            @endif
+
+            @if($appointment->isConfirmed() && !$appointment->consultation && auth()->user()->isDoctor())
+            <a href="{{ route('consultations.create', $appointment) }}" class="btn btn-sm btn-success">
+                <i class="bi bi-clipboard2-pulse me-1"></i>Démarrer consultation
+            </a>
+            @endif
         @endif
     </div>
 </div>
@@ -48,16 +65,16 @@
             <div class="d-flex align-items-center gap-3 mb-3">
                 <div class="rounded-circle d-flex align-items-center justify-content-center fw-bold"
                      style="width:48px;height:48px;background:#dbeafe;color:#1d4ed8;font-size:1rem">
-                    {{ strtoupper(substr($appointment->patient->first_name,0,1).substr($appointment->patient->last_name,0,1)) }}
+                    {{ $appointment->patient ? strtoupper(substr($appointment->patient?->first_name ?? '?',0,1).substr($appointment->patient?->last_name ?? '',0,1)) : '?' }}
                 </div>
                 <div>
-                    <div class="fw-bold">{{ $appointment->patient->full_name }}</div>
+                    <div class="fw-bold">{{ $appointment->patient?->full_name ?? 'Patient inconnu' }}</div>
                     <small class="text-muted">{{ $appointment->patient->age }} ans — {{ $appointment->patient->gender === 'male' ? 'M' : 'F' }}</small>
                 </div>
             </div>
             <table class="table table-sm table-borderless small">
                 <tr><td class="text-muted">CIN</td><td><code>{{ $appointment->patient->cin ?? '—' }}</code></td></tr>
-                <tr><td class="text-muted">Téléphone</td><td>{{ $appointment->patient->phone }}</td></tr>
+                <tr><td class="text-muted">Téléphone</td><td>{{ $appointment->patient?->phone ?? '—' }}</td></tr>
                 @if($appointment->patient->blood_type)
                 <tr><td class="text-muted">Groupe sanguin</td>
                     <td><span class="badge bg-danger">{{ $appointment->patient->blood_type }}</span></td></tr>
@@ -81,8 +98,8 @@
                 <img src="{{ $appointment->doctor->avatar_url }}" class="rounded-circle"
                      width="44" height="44" alt="">
                 <div>
-                    <div class="fw-bold">Dr. {{ $appointment->doctor->name }}</div>
-                    <small class="text-muted">{{ $appointment->doctor->speciality ?? 'Médecine générale' }}</small>
+                    <div class="fw-bold">Dr. {{ $appointment->doctor?->name ?? '—' }}</div>
+                    <small class="text-muted">{{ $appointment->doctor?->speciality ?? 'Médecine générale' }}</small>
                 </div>
             </div>
         </div>

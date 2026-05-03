@@ -126,6 +126,13 @@
                     <button type="submit" class="btn btn-login btn-primary w-100 text-white">
                         <i class="bi bi-box-arrow-in-right me-2"></i>Se connecter
                     </button>
+
+                    <div class="text-center mt-3 pt-2" style="border-top:1px solid #f1f5f9">
+                        <span class="small text-muted">Pas encore de compte ?</span>
+                        <a href="{{ route('register') }}" class="small fw-semibold text-primary text-decoration-none ms-1">
+                            <i class="bi bi-person-plus me-1"></i>S'inscrire comme patient
+                        </a>
+                    </div>
                 </form>
 
                 <!-- Demo credentials -->

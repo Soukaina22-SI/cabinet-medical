@@ -36,8 +36,11 @@
         <i class="bi bi-clipboard2-pulse"></i> Mes Consultations
     </a>
     <span class="nav-section">Patients &amp; Planning</span>
-    <a href="{{ route('admin.patients.index') }}" class="nav-link">
+    <a href="{{ route('admin.patients.index') }}" class="nav-link {{ request()->routeIs('admin.patients.*') ? 'active' : '' }}">
         <i class="bi bi-people"></i> Dossiers Patients
+    </a>
+    <a href="{{ route('admin.patients.create') }}" class="nav-link {{ request()->routeIs('admin.patients.create') ? 'active' : '' }}">
+        <i class="bi bi-person-plus"></i> Ajouter Patient
     </a>
     <a href="{{ route('doctor.schedule') }}" class="nav-link {{ request()->routeIs('doctor.schedule') ? 'active' : '' }}">
         <i class="bi bi-clock"></i> Mes Disponibilités
@@ -52,11 +55,17 @@
     <a href="{{ route('appointments.index') }}" class="nav-link {{ request()->routeIs('appointments.*') ? 'active' : '' }}">
         <i class="bi bi-calendar3"></i> Rendez-vous
     </a>
-    <a href="{{ route('admin.patients.index') }}" class="nav-link">
-        <i class="bi bi-people"></i> Patients
-    </a>
     <a href="{{ route('appointments.create') }}" class="nav-link">
         <i class="bi bi-calendar-plus"></i> Nouveau RDV
+    </a>
+    <a href="{{ route('admin.patients.index') }}" class="nav-link {{ request()->routeIs('admin.patients.*') ? 'active' : '' }}">
+        <i class="bi bi-people"></i> Patients
+    </a>
+    <a href="{{ route('admin.patients.create') }}" class="nav-link {{ request()->routeIs('admin.patients.create') ? 'active' : '' }}">
+        <i class="bi bi-person-plus"></i> Ajouter Patient
+    </a>
+    <a href="{{ route('consultations.index') }}" class="nav-link {{ request()->routeIs('consultations.*') ? 'active' : '' }}">
+        <i class="bi bi-clipboard2-pulse"></i> Consultations
     </a>
 
 @elseif($role === 'patient')

@@ -3,14 +3,14 @@
 @section('title', $patient->full_name)
 
 @section('breadcrumb')
-    <li class="breadcrumb-item"><a href="{{ route('admin.patients.index') }}">Patients</a></li>
+    <li class="breadcrumb-item"><a href="{{ route('patients.index') }}">Patients</a></li>
     <li class="breadcrumb-item active">{{ $patient->full_name }}</li>
 @endsection
 
 @section('content')
 <div class="d-flex justify-content-between align-items-start mb-4">
     <div class="d-flex align-items-center gap-3">
-        <a href="{{ route('admin.patients.index') }}" class="btn btn-sm btn-light rounded-3">
+        <a href="{{ route('patients.index') }}" class="btn btn-sm btn-light rounded-3">
             <i class="bi bi-arrow-left"></i>
         </a>
         <div class="rounded-circle d-flex align-items-center justify-content-center fw-bold fs-4"
@@ -32,7 +32,7 @@
            class="btn btn-success rounded-3">
             <i class="bi bi-calendar-plus me-1"></i> Nouveau RDV
         </a>
-        <a href="{{ route('admin.patients.edit', $patient) }}" class="btn btn-outline-primary rounded-3">
+        <a href="{{ route('patients.edit', $patient) }}" class="btn btn-outline-primary rounded-3">
             <i class="bi bi-pencil me-1"></i> Modifier
         </a>
     </div>

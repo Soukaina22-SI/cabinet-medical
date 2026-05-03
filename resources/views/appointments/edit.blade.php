@@ -19,7 +19,7 @@
     <div>
         <h5 class="fw-bold mb-0">Modifier le rendez-vous</h5>
         <p class="text-muted small mb-0">
-            {{ $appointment->patient->full_name }} — Dr. {{ $appointment->doctor->name }}
+            {{ $appointment->patient?->full_name ?? 'Patient inconnu' }} — Dr. {{ $appointment->doctor?->name ?? '—' }}
         </p>
     </div>
 </div>
@@ -40,11 +40,11 @@
     <div class="row g-3">
         <div class="col-md-6">
             <label class="form-label small fw-semibold text-muted">Patient</label>
-            <input type="text" class="form-control bg-white" value="{{ $appointment->patient->full_name }}" disabled>
+            <input type="text" class="form-control bg-white" value="{{ $appointment->patient?->full_name ?? 'Patient inconnu' }}" disabled>
         </div>
         <div class="col-md-6">
             <label class="form-label small fw-semibold text-muted">Médecin</label>
-            <input type="text" class="form-control bg-white" value="Dr. {{ $appointment->doctor->name }}" disabled>
+            <input type="text" class="form-control bg-white" value="Dr. {{ $appointment->doctor?->name ?? '—' }}" disabled>
         </div>
     </div>
 </div>

@@ -14,7 +14,18 @@ class RoleMiddleware
             return redirect()->route('login');
         }
 
-        if (!in_array(auth()->user()->role, $roles)) {
+        $userRole = auth()->user()->role;
+
+        // Support: role:admin,medecin,secretaire  (virgule dans un seul argument)
+        //      et: role:admin middleware:medecin   (arguments séparés)
+        $allowed = [];
+        foreach ($roles as $role) {
+            foreach (explode(',', $role) as $r) {
+                $allowed[] = trim($r);
+            }
+        }
+
+        if (!in_array($userRole, $allowed)) {
             abort(403, 'Accès non autorisé.');
         }
 
