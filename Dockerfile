@@ -1,3 +1,4 @@
+
 # Dockerfile — Pour déploiement VPS ou Docker
 FROM php:8.2-fpm-alpine
 
