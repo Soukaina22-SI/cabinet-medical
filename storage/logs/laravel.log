@@ -1,0 +1,651 @@
+[2026-05-01 20:39:07] local.ERROR: The C:\Users\hp\cabinet-medical\cabinet-medical\bootstrap\cache directory must be present and writable. {"exception":"[object] (Exception(code: 0): The C:\\Users\\hp\\cabinet-medical\\cabinet-medical\\bootstrap\\cache directory must be present and writable. at C:/Users/hp/cabinet-medical/cabinet-medical/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php:179)
+[stacktrace]
+#0 C:/Users/hp/cabinet-medical/cabinet-medical/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(132): Illuminate/Foundation/PackageManifest->write(Array)
+#1 C:/Users/hp/cabinet-medical/cabinet-medical/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(108): Illuminate/Foundation/PackageManifest->build()
+#2 C:/Users/hp/cabinet-medical/cabinet-medical/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(90): Illuminate/Foundation/PackageManifest->getManifest()
+#3 C:/Users/hp/cabinet-medical/cabinet-medical/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(79): Illuminate/Foundation/PackageManifest->config('aliases')
+#4 C:/Users/hp/cabinet-medical/cabinet-medical/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate/Foundation/PackageManifest->aliases()
+#5 C:/Users/hp/cabinet-medical/cabinet-medical/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(342): Illuminate/Foundation/Bootstrap/RegisterFacades->bootstrap(Object(Illuminate/Foundation/Application))
+#6 C:/Users/hp/cabinet-medical/cabinet-medical/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(494): Illuminate/Foundation/Application->bootstrapWith(Array)
+#7 C:/Users/hp/cabinet-medical/cabinet-medical/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(196): Illuminate/Foundation/Console/Kernel->bootstrap()
+#8 C:/Users/hp/cabinet-medical/cabinet-medical/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#9 C:/Users/hp/cabinet-medical/cabinet-medical/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#10 {main}
+"} 
+[2026-05-01 20:40:01] local.ERROR: The C:\Users\hp\cabinet-medical\cabinet-medical\bootstrap\cache directory must be present and writable. {"exception":"[object] (Exception(code: 0): The C:\\Users\\hp\\cabinet-medical\\cabinet-medical\\bootstrap\\cache directory must be present and writable. at C:/Users/hp/cabinet-medical/cabinet-medical/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php:179)
+[stacktrace]
+#0 C:/Users/hp/cabinet-medical/cabinet-medical/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(132): Illuminate/Foundation/PackageManifest->write(Array)
+#1 C:/Users/hp/cabinet-medical/cabinet-medical/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(108): Illuminate/Foundation/PackageManifest->build()
+#2 C:/Users/hp/cabinet-medical/cabinet-medical/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(90): Illuminate/Foundation/PackageManifest->getManifest()
+#3 C:/Users/hp/cabinet-medical/cabinet-medical/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(79): Illuminate/Foundation/PackageManifest->config('aliases')
+#4 C:/Users/hp/cabinet-medical/cabinet-medical/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate/Foundation/PackageManifest->aliases()
+#5 C:/Users/hp/cabinet-medical/cabinet-medical/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(342): Illuminate/Foundation/Bootstrap/RegisterFacades->bootstrap(Object(Illuminate/Foundation/Application))
+#6 C:/Users/hp/cabinet-medical/cabinet-medical/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(494): Illuminate/Foundation/Application->bootstrapWith(Array)
+#7 C:/Users/hp/cabinet-medical/cabinet-medical/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(196): Illuminate/Foundation/Console/Kernel->bootstrap()
+#8 C:/Users/hp/cabinet-medical/cabinet-medical/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#9 C:/Users/hp/cabinet-medical/cabinet-medical/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#10 {main}
+"} 
+[2026-05-01 20:40:11] local.ERROR: The C:\Users\hp\cabinet-medical\cabinet-medical\bootstrap\cache directory must be present and writable. {"exception":"[object] (Exception(code: 0): The C:\\Users\\hp\\cabinet-medical\\cabinet-medical\\bootstrap\\cache directory must be present and writable. at C:/Users/hp/cabinet-medical/cabinet-medical/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php:179)
+[stacktrace]
+#0 C:/Users/hp/cabinet-medical/cabinet-medical/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(132): Illuminate/Foundation/PackageManifest->write(Array)
+#1 C:/Users/hp/cabinet-medical/cabinet-medical/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(108): Illuminate/Foundation/PackageManifest->build()
+#2 C:/Users/hp/cabinet-medical/cabinet-medical/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(90): Illuminate/Foundation/PackageManifest->getManifest()
+#3 C:/Users/hp/cabinet-medical/cabinet-medical/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(79): Illuminate/Foundation/PackageManifest->config('aliases')
+#4 C:/Users/hp/cabinet-medical/cabinet-medical/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate/Foundation/PackageManifest->aliases()
+#5 C:/Users/hp/cabinet-medical/cabinet-medical/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(342): Illuminate/Foundation/Bootstrap/RegisterFacades->bootstrap(Object(Illuminate/Foundation/Application))
+#6 C:/Users/hp/cabinet-medical/cabinet-medical/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(494): Illuminate/Foundation/Application->bootstrapWith(Array)
+#7 C:/Users/hp/cabinet-medical/cabinet-medical/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(196): Illuminate/Foundation/Console/Kernel->bootstrap()
+#8 C:/Users/hp/cabinet-medical/cabinet-medical/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#9 C:/Users/hp/cabinet-medical/cabinet-medical/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#10 {main}
+"} 
+[2026-05-01 20:41:54] local.ERROR: The C:\Users\hp\cabinet-medical\cabinet-medical\bootstrap\cache directory must be present and writable. {"exception":"[object] (Exception(code: 0): The C:\\Users\\hp\\cabinet-medical\\cabinet-medical\\bootstrap\\cache directory must be present and writable. at C:/Users/hp/cabinet-medical/cabinet-medical/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php:179)
+[stacktrace]
+#0 C:/Users/hp/cabinet-medical/cabinet-medical/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(132): Illuminate/Foundation/PackageManifest->write(Array)
+#1 C:/Users/hp/cabinet-medical/cabinet-medical/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(108): Illuminate/Foundation/PackageManifest->build()
+#2 C:/Users/hp/cabinet-medical/cabinet-medical/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(90): Illuminate/Foundation/PackageManifest->getManifest()
+#3 C:/Users/hp/cabinet-medical/cabinet-medical/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(79): Illuminate/Foundation/PackageManifest->config('aliases')
+#4 C:/Users/hp/cabinet-medical/cabinet-medical/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate/Foundation/PackageManifest->aliases()
+#5 C:/Users/hp/cabinet-medical/cabinet-medical/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(342): Illuminate/Foundation/Bootstrap/RegisterFacades->bootstrap(Object(Illuminate/Foundation/Application))
+#6 C:/Users/hp/cabinet-medical/cabinet-medical/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(494): Illuminate/Foundation/Application->bootstrapWith(Array)
+#7 C:/Users/hp/cabinet-medical/cabinet-medical/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(196): Illuminate/Foundation/Console/Kernel->bootstrap()
+#8 C:/Users/hp/cabinet-medical/cabinet-medical/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#9 C:/Users/hp/cabinet-medical/cabinet-medical/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#10 {main}
+"} 
+[2026-05-01 20:55:45] local.DEBUG: From: cabinet_medical <hello@example.com>
+To: omar.elidrissi@gmail.com
+Subject: =?utf-8?Q?=E2=8F=B0?= Rappel : Votre rendez-vous demain
+ =?utf-8?Q?=E2=80=94?= MedClinic
+MIME-Version: 1.0
+Date: Fri, 01 May 2026 20:55:44 +0000
+Message-ID: <223350969a893e1ee628b5ba9ae0bd7d@example.com>
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; background:#f1f5f9; margin:0; padding:24px; }
+        .container { max-width:560px; margin:0 auto; background:#fff; border-radius:16px; overflow:hidden; box-shadow:0 4px 20px rgba(0,0,0,.08); }
+        .header { background:linear-gradient(135deg,#f59e0b,#d97706); padding:32px; text-align:center; }
+        .header h1 { color:#fff; font-size:22px; margin:0; }
+        .header p { color:rgba(255,255,255,.85); margin:6px 0 0; font-size:14px; }
+        .body { padding:32px; }
+        .card { background:#fffbeb; border-radius:10px; padding:20px; margin:20px 0; border-left:4px solid #f59e0b; }
+        .card-row { display:flex; justify-content:space-between; padding:6px 0; border-bottom:1px solid #fde68a; font-size:14px; }
+        .card-row:last-child { border-bottom:none; }
+        .card-row .label { color:#92400e; }
+        .card-row .value { font-weight:600; color:#1e293b; }
+        .tip { background:#f0fdf4; border-radius:8px; padding:14px; font-size:13px; color:#14532d; margin:20px 0; }
+        .footer { background:#f8fafc; padding:20px 32px; text-align:center; font-size:12px; color:#94a3b8; border-top:1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div style="font-size:36px;margin-bottom:8px">⏰</div>
+        <h1>Rappel de Rendez-vous</h1>
+        <p>Votre consultation est prévue <strong>demain</strong></p>
+    </div>
+    <div class="body">
+        <p>Bonjour <strong>Omar El Idrissi</strong>,</p>
+        <p>Ceci est un rappel pour votre rendez-vous médical demain chez <strong>MedClinic</strong> :</p>
+
+        <div class="card">
+            <div class="card-row">
+                <span class="label">🩺 Médecin</span>
+                <span class="value">Dr. Dr. Youssef El Amrani</span>
+            </div>
+            <div class="card-row">
+                <span class="label">📅 Date</span>
+                <span class="value">Thursday 04 June 2026</span>
+            </div>
+            <div class="card-row">
+                <span class="label">🕐 Heure</span>
+                <span class="value">10:00</span>
+            </div>
+                        <div class="card-row">
+                <span class="label">📋 Motif</span>
+                <span class="value">Douleur abdominale, suivi médical général</span>
+            </div>
+                    </div>
+
+        <div class="tip">
+            💡 <strong>Conseils :</strong><br>
+            • Arrivez 10 minutes à l'avance<br>
+            • Apportez votre CIN et carnet de santé<br>
+            • En cas d'empêchement, annulez avant 24h
+        </div>
+
+        <p style="font-size:13px;color:#64748b">
+            Pour annuler ou modifier votre rendez-vous, contactez-nous au <strong>+212 5XX-XXXXXX</strong>.
+        </p>
+    </div>
+    <div class="footer">
+        <strong>MedClinic</strong> — Casablanca, Maroc<br>
+        Email automatique — Merci de ne pas répondre directement.
+    </div>
+</div>
+</body>
+</html>
+  
+[2026-05-01 20:58:24] local.DEBUG: From: cabinet_medical <hello@example.com>
+To: s.laghadouini8166@uca.ac.ma
+Subject: =?utf-8?Q?=E2=9C=85?= Confirmation de votre rendez-vous
+ =?utf-8?Q?=E2=80=94?= MedClinic
+MIME-Version: 1.0
+Date: Fri, 01 May 2026 20:58:24 +0000
+Message-ID: <ed6ee7ec61c3d404f446418e5caee8a8@example.com>
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; background:#f1f5f9; margin:0; padding:24px; }
+        .container { max-width:560px; margin:0 auto; background:#fff; border-radius:16px; overflow:hidden; box-shadow:0 4px 20px rgba(0,0,0,.08); }
+        .header { background:linear-gradient(135deg,#1d4ed8,#3b82f6); padding:32px 32px 24px; text-align:center; }
+        .header h1 { color:#fff; font-size:22px; margin:0; }
+        .header p { color:rgba(255,255,255,.8); margin:6px 0 0; font-size:14px; }
+        .body { padding:32px; }
+        .greeting { font-size:16px; margin-bottom:20px; }
+        .card { background:#f8fafc; border-radius:10px; padding:20px; margin:20px 0; border-left:4px solid #3b82f6; }
+        .card-row { display:flex; justify-content:space-between; padding:6px 0; border-bottom:1px solid #e2e8f0; font-size:14px; }
+        .card-row:last-child { border-bottom:none; }
+        .card-row .label { color:#64748b; }
+        .card-row .value { font-weight:600; color:#1e293b; }
+        .status { display:inline-block; background:#d1fae5; color:#065f46; padding:4px 12px; border-radius:20px; font-size:13px; font-weight:600; margin:16px 0; }
+        .cta { text-align:center; margin:24px 0; }
+        .btn { background:#1d4ed8; color:#fff; text-decoration:none; padding:12px 32px; border-radius:8px; font-weight:600; font-size:14px; display:inline-block; }
+        .footer { background:#f8fafc; padding:20px 32px; text-align:center; font-size:12px; color:#94a3b8; border-top:1px solid #e2e8f0; }
+        .icon { font-size:32px; margin-bottom:8px; }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div class="header">
+        <div class="icon">✅</div>
+        <h1>Rendez-vous Confirmé</h1>
+        <p>Votre consultation a bien été enregistrée</p>
+    </div>
+
+    <div class="body">
+        <p class="greeting">
+            Bonjour <strong>Soukaina LAGHADOUINI</strong>,
+        </p>
+
+        <p>Nous confirmons votre rendez-vous médical chez <strong>MedClinic</strong>.
+           Voici le récapitulatif de votre consultation :</p>
+
+        <div class="card">
+            <div class="card-row">
+                <span class="label">🩺 Médecin</span>
+                <span class="value">Dr. Dr. Youssef El Amrani</span>
+            </div>
+            <div class="card-row">
+                <span class="label">🏥 Spécialité</span>
+                <span class="value">Médecine Générale</span>
+            </div>
+            <div class="card-row">
+                <span class="label">📅 Date</span>
+                <span class="value">Saturday 09 May 2026</span>
+            </div>
+            <div class="card-row">
+                <span class="label">🕐 Heure</span>
+                <span class="value">12:30</span>
+            </div>
+                        <div class="card-row">
+                <span class="label">📋 Motif</span>
+                <span class="value">dfgn,;</span>
+            </div>
+                    </div>
+
+        <div class="status">✓ Statut : Confirmé</div>
+
+        <p style="font-size:14px;color:#475569">
+            Merci d'arriver <strong>10 minutes avant</strong> votre rendez-vous.
+            En cas d'empêchement, veuillez annuler au moins 24h à l'avance.
+        </p>
+
+        <div class="cta">
+            <a href="http://127.0.0.1:8000/appointments" class="btn">Voir mon rendez-vous</a>
+        </div>
+
+        <p style="font-size:13px;color:#94a3b8">
+            Si vous avez des questions, contactez-nous au <strong>+212 5XX-XXXXXX</strong>
+            ou répondez à cet email.
+        </p>
+    </div>
+
+    <div class="footer">
+        <strong>MedClinic</strong> — Casablanca, Maroc<br>
+        Cet email a été envoyé automatiquement. Merci de ne pas y répondre directement.
+    </div>
+
+</div>
+</body>
+</html>
+  
+[2026-05-01 20:59:45] local.DEBUG: From: cabinet_medical <hello@example.com>
+To: s.laghadouini8166@uca.ac.ma
+Subject: =?utf-8?Q?=E2=9C=85?= Confirmation de votre rendez-vous
+ =?utf-8?Q?=E2=80=94?= MedClinic
+MIME-Version: 1.0
+Date: Fri, 01 May 2026 20:59:45 +0000
+Message-ID: <c617723d8f4ae7ec76ae3b6db90674b9@example.com>
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; background:#f1f5f9; margin:0; padding:24px; }
+        .container { max-width:560px; margin:0 auto; background:#fff; border-radius:16px; overflow:hidden; box-shadow:0 4px 20px rgba(0,0,0,.08); }
+        .header { background:linear-gradient(135deg,#1d4ed8,#3b82f6); padding:32px 32px 24px; text-align:center; }
+        .header h1 { color:#fff; font-size:22px; margin:0; }
+        .header p { color:rgba(255,255,255,.8); margin:6px 0 0; font-size:14px; }
+        .body { padding:32px; }
+        .greeting { font-size:16px; margin-bottom:20px; }
+        .card { background:#f8fafc; border-radius:10px; padding:20px; margin:20px 0; border-left:4px solid #3b82f6; }
+        .card-row { display:flex; justify-content:space-between; padding:6px 0; border-bottom:1px solid #e2e8f0; font-size:14px; }
+        .card-row:last-child { border-bottom:none; }
+        .card-row .label { color:#64748b; }
+        .card-row .value { font-weight:600; color:#1e293b; }
+        .status { display:inline-block; background:#d1fae5; color:#065f46; padding:4px 12px; border-radius:20px; font-size:13px; font-weight:600; margin:16px 0; }
+        .cta { text-align:center; margin:24px 0; }
+        .btn { background:#1d4ed8; color:#fff; text-decoration:none; padding:12px 32px; border-radius:8px; font-weight:600; font-size:14px; display:inline-block; }
+        .footer { background:#f8fafc; padding:20px 32px; text-align:center; font-size:12px; color:#94a3b8; border-top:1px solid #e2e8f0; }
+        .icon { font-size:32px; margin-bottom:8px; }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div class="header">
+        <div class="icon">✅</div>
+        <h1>Rendez-vous Confirmé</h1>
+        <p>Votre consultation a bien été enregistrée</p>
+    </div>
+
+    <div class="body">
+        <p class="greeting">
+            Bonjour <strong>Soukaina LAGHADOUINI</strong>,
+        </p>
+
+        <p>Nous confirmons votre rendez-vous médical chez <strong>MedClinic</strong>.
+           Voici le récapitulatif de votre consultation :</p>
+
+        <div class="card">
+            <div class="card-row">
+                <span class="label">🩺 Médecin</span>
+                <span class="value">Dr. Dr. Youssef El Amrani</span>
+            </div>
+            <div class="card-row">
+                <span class="label">🏥 Spécialité</span>
+                <span class="value">Médecine Générale</span>
+            </div>
+            <div class="card-row">
+                <span class="label">📅 Date</span>
+                <span class="value">Saturday 09 May 2026</span>
+            </div>
+            <div class="card-row">
+                <span class="label">🕐 Heure</span>
+                <span class="value">12:30</span>
+            </div>
+                        <div class="card-row">
+                <span class="label">📋 Motif</span>
+                <span class="value">dfgn,;</span>
+            </div>
+                    </div>
+
+        <div class="status">✓ Statut : Confirmé</div>
+
+        <p style="font-size:14px;color:#475569">
+            Merci d'arriver <strong>10 minutes avant</strong> votre rendez-vous.
+            En cas d'empêchement, veuillez annuler au moins 24h à l'avance.
+        </p>
+
+        <div class="cta">
+            <a href="http://127.0.0.1:8000/appointments" class="btn">Voir mon rendez-vous</a>
+        </div>
+
+        <p style="font-size:13px;color:#94a3b8">
+            Si vous avez des questions, contactez-nous au <strong>+212 5XX-XXXXXX</strong>
+            ou répondez à cet email.
+        </p>
+    </div>
+
+    <div class="footer">
+        <strong>MedClinic</strong> — Casablanca, Maroc<br>
+        Cet email a été envoyé automatiquement. Merci de ne pas y répondre directement.
+    </div>
+
+</div>
+</body>
+</html>
+  
+[2026-05-01 21:08:41] local.DEBUG: From: cabinet_medical <hello@example.com>
+To: yassine.elfadili@email.com
+Subject: =?utf-8?Q?=E2=8F=B0?= Rappel : Votre rendez-vous demain
+ =?utf-8?Q?=E2=80=94?= MedClinic
+MIME-Version: 1.0
+Date: Fri, 01 May 2026 21:08:41 +0000
+Message-ID: <5c1bc6a514834b3d2d7ddbdb6f673b51@example.com>
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; background:#f1f5f9; margin:0; padding:24px; }
+        .container { max-width:560px; margin:0 auto; background:#fff; border-radius:16px; overflow:hidden; box-shadow:0 4px 20px rgba(0,0,0,.08); }
+        .header { background:linear-gradient(135deg,#f59e0b,#d97706); padding:32px; text-align:center; }
+        .header h1 { color:#fff; font-size:22px; margin:0; }
+        .header p { color:rgba(255,255,255,.85); margin:6px 0 0; font-size:14px; }
+        .body { padding:32px; }
+        .card { background:#fffbeb; border-radius:10px; padding:20px; margin:20px 0; border-left:4px solid #f59e0b; }
+        .card-row { display:flex; justify-content:space-between; padding:6px 0; border-bottom:1px solid #fde68a; font-size:14px; }
+        .card-row:last-child { border-bottom:none; }
+        .card-row .label { color:#92400e; }
+        .card-row .value { font-weight:600; color:#1e293b; }
+        .tip { background:#f0fdf4; border-radius:8px; padding:14px; font-size:13px; color:#14532d; margin:20px 0; }
+        .footer { background:#f8fafc; padding:20px 32px; text-align:center; font-size:12px; color:#94a3b8; border-top:1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div style="font-size:36px;margin-bottom:8px">⏰</div>
+        <h1>Rappel de Rendez-vous</h1>
+        <p>Votre consultation est prévue <strong>demain</strong></p>
+    </div>
+    <div class="body">
+        <p>Bonjour <strong>Yassine El Fadili</strong>,</p>
+        <p>Ceci est un rappel pour votre rendez-vous médical demain chez <strong>MedClinic</strong> :</p>
+
+        <div class="card">
+            <div class="card-row">
+                <span class="label">🩺 Médecin</span>
+                <span class="value">Dr. Dr. Nadia El Fassi</span>
+            </div>
+            <div class="card-row">
+                <span class="label">📅 Date</span>
+                <span class="value">Tuesday 28 April 2026</span>
+            </div>
+            <div class="card-row">
+                <span class="label">🕐 Heure</span>
+                <span class="value">15:30</span>
+            </div>
+                        <div class="card-row">
+                <span class="label">📋 Motif</span>
+                <span class="value">Douleurs abdominales récurrentes depuis quelques jours, surtout après les repas, sans fièvre ni vomissements. Consultation de suivi.</span>
+            </div>
+                    </div>
+
+        <div class="tip">
+            💡 <strong>Conseils :</strong><br>
+            • Arrivez 10 minutes à l'avance<br>
+            • Apportez votre CIN et carnet de santé<br>
+            • En cas d'empêchement, annulez avant 24h
+        </div>
+
+        <p style="font-size:13px;color:#64748b">
+            Pour annuler ou modifier votre rendez-vous, contactez-nous au <strong>+212 5XX-XXXXXX</strong>.
+        </p>
+    </div>
+    <div class="footer">
+        <strong>MedClinic</strong> — Casablanca, Maroc<br>
+        Email automatique — Merci de ne pas répondre directement.
+    </div>
+</div>
+</body>
+</html>
+  
+[2026-05-01 21:09:40] local.DEBUG: From: cabinet_medical <hello@example.com>
+To: s.laghadouini8166@uca.ac.ma
+Subject: =?utf-8?Q?=E2=8F=B0?= Rappel : Votre rendez-vous demain
+ =?utf-8?Q?=E2=80=94?= MedClinic
+MIME-Version: 1.0
+Date: Fri, 01 May 2026 21:09:40 +0000
+Message-ID: <390345fd73a20e7266f0b374959b6c43@example.com>
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; background:#f1f5f9; margin:0; padding:24px; }
+        .container { max-width:560px; margin:0 auto; background:#fff; border-radius:16px; overflow:hidden; box-shadow:0 4px 20px rgba(0,0,0,.08); }
+        .header { background:linear-gradient(135deg,#f59e0b,#d97706); padding:32px; text-align:center; }
+        .header h1 { color:#fff; font-size:22px; margin:0; }
+        .header p { color:rgba(255,255,255,.85); margin:6px 0 0; font-size:14px; }
+        .body { padding:32px; }
+        .card { background:#fffbeb; border-radius:10px; padding:20px; margin:20px 0; border-left:4px solid #f59e0b; }
+        .card-row { display:flex; justify-content:space-between; padding:6px 0; border-bottom:1px solid #fde68a; font-size:14px; }
+        .card-row:last-child { border-bottom:none; }
+        .card-row .label { color:#92400e; }
+        .card-row .value { font-weight:600; color:#1e293b; }
+        .tip { background:#f0fdf4; border-radius:8px; padding:14px; font-size:13px; color:#14532d; margin:20px 0; }
+        .footer { background:#f8fafc; padding:20px 32px; text-align:center; font-size:12px; color:#94a3b8; border-top:1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div style="font-size:36px;margin-bottom:8px">⏰</div>
+        <h1>Rappel de Rendez-vous</h1>
+        <p>Votre consultation est prévue <strong>demain</strong></p>
+    </div>
+    <div class="body">
+        <p>Bonjour <strong>Soukaina LAGHADOUINI</strong>,</p>
+        <p>Ceci est un rappel pour votre rendez-vous médical demain chez <strong>MedClinic</strong> :</p>
+
+        <div class="card">
+            <div class="card-row">
+                <span class="label">🩺 Médecin</span>
+                <span class="value">Dr. Dr. Youssef El Amrani</span>
+            </div>
+            <div class="card-row">
+                <span class="label">📅 Date</span>
+                <span class="value">Saturday 09 May 2026</span>
+            </div>
+            <div class="card-row">
+                <span class="label">🕐 Heure</span>
+                <span class="value">12:30</span>
+            </div>
+                        <div class="card-row">
+                <span class="label">📋 Motif</span>
+                <span class="value">dfgn,;</span>
+            </div>
+                    </div>
+
+        <div class="tip">
+            💡 <strong>Conseils :</strong><br>
+            • Arrivez 10 minutes à l'avance<br>
+            • Apportez votre CIN et carnet de santé<br>
+            • En cas d'empêchement, annulez avant 24h
+        </div>
+
+        <p style="font-size:13px;color:#64748b">
+            Pour annuler ou modifier votre rendez-vous, contactez-nous au <strong>+212 5XX-XXXXXX</strong>.
+        </p>
+    </div>
+    <div class="footer">
+        <strong>MedClinic</strong> — Casablanca, Maroc<br>
+        Email automatique — Merci de ne pas répondre directement.
+    </div>
+</div>
+</body>
+</html>
+  
+[2026-05-03 17:37:33] local.DEBUG: From: cabinet_medical <hello@example.com>
+To: omar.elidrissi@gmail.com
+Subject: =?utf-8?Q?=E2=8F=B0?= Rappel : Votre rendez-vous demain
+ =?utf-8?Q?=E2=80=94?= MedClinic
+MIME-Version: 1.0
+Date: Sun, 03 May 2026 17:37:32 +0000
+Message-ID: <5ba0b5c58ae6a2195247aa5e1010baad@example.com>
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; background:#f1f5f9; margin:0; padding:24px; }
+        .container { max-width:560px; margin:0 auto; background:#fff; border-radius:16px; overflow:hidden; box-shadow:0 4px 20px rgba(0,0,0,.08); }
+        .header { background:linear-gradient(135deg,#f59e0b,#d97706); padding:32px; text-align:center; }
+        .header h1 { color:#fff; font-size:22px; margin:0; }
+        .header p { color:rgba(255,255,255,.85); margin:6px 0 0; font-size:14px; }
+        .body { padding:32px; }
+        .card { background:#fffbeb; border-radius:10px; padding:20px; margin:20px 0; border-left:4px solid #f59e0b; }
+        .card-row { display:flex; justify-content:space-between; padding:6px 0; border-bottom:1px solid #fde68a; font-size:14px; }
+        .card-row:last-child { border-bottom:none; }
+        .card-row .label { color:#92400e; }
+        .card-row .value { font-weight:600; color:#1e293b; }
+        .tip { background:#f0fdf4; border-radius:8px; padding:14px; font-size:13px; color:#14532d; margin:20px 0; }
+        .footer { background:#f8fafc; padding:20px 32px; text-align:center; font-size:12px; color:#94a3b8; border-top:1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div style="font-size:36px;margin-bottom:8px">⏰</div>
+        <h1>Rappel de Rendez-vous</h1>
+        <p>Votre consultation est prévue <strong>demain</strong></p>
+    </div>
+    <div class="body">
+        <p>Bonjour <strong>Omar El Idrissi</strong>,</p>
+        <p>Ceci est un rappel pour votre rendez-vous médical demain chez <strong>MedClinic</strong> :</p>
+
+        <div class="card">
+            <div class="card-row">
+                <span class="label">🩺 Médecin</span>
+                <span class="value">Dr. Dr. Youssef El Amrani</span>
+            </div>
+            <div class="card-row">
+                <span class="label">📅 Date</span>
+                <span class="value">Thursday 04 June 2026</span>
+            </div>
+            <div class="card-row">
+                <span class="label">🕐 Heure</span>
+                <span class="value">10:00</span>
+            </div>
+                        <div class="card-row">
+                <span class="label">📋 Motif</span>
+                <span class="value">Douleur abdominale, suivi médical général</span>
+            </div>
+                    </div>
+
+        <div class="tip">
+            💡 <strong>Conseils :</strong><br>
+            • Arrivez 10 minutes à l'avance<br>
+            • Apportez votre CIN et carnet de santé<br>
+            • En cas d'empêchement, annulez avant 24h
+        </div>
+
+        <p style="font-size:13px;color:#64748b">
+            Pour annuler ou modifier votre rendez-vous, contactez-nous au <strong>+212 5XX-XXXXXX</strong>.
+        </p>
+    </div>
+    <div class="footer">
+        <strong>MedClinic</strong> — Casablanca, Maroc<br>
+        Email automatique — Merci de ne pas répondre directement.
+    </div>
+</div>
+</body>
+</html>
+  
+[2026-05-03 17:43:20] local.DEBUG: From: cabinet_medical <hello@example.com>
+To: omar.elidrissi@gmail.com
+Subject: =?utf-8?Q?=E2=8F=B0?= Rappel : Votre rendez-vous demain
+ =?utf-8?Q?=E2=80=94?= MedClinic
+MIME-Version: 1.0
+Date: Sun, 03 May 2026 17:43:20 +0000
+Message-ID: <47c5d0ee0e5818fa99fa345ae8add2b1@example.com>
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; background:#f1f5f9; margin:0; padding:24px; }
+        .container { max-width:560px; margin:0 auto; background:#fff; border-radius:16px; overflow:hidden; box-shadow:0 4px 20px rgba(0,0,0,.08); }
+        .header { background:linear-gradient(135deg,#f59e0b,#d97706); padding:32px; text-align:center; }
+        .header h1 { color:#fff; font-size:22px; margin:0; }
+        .header p { color:rgba(255,255,255,.85); margin:6px 0 0; font-size:14px; }
+        .body { padding:32px; }
+        .card { background:#fffbeb; border-radius:10px; padding:20px; margin:20px 0; border-left:4px solid #f59e0b; }
+        .card-row { display:flex; justify-content:space-between; padding:6px 0; border-bottom:1px solid #fde68a; font-size:14px; }
+        .card-row:last-child { border-bottom:none; }
+        .card-row .label { color:#92400e; }
+        .card-row .value { font-weight:600; color:#1e293b; }
+        .tip { background:#f0fdf4; border-radius:8px; padding:14px; font-size:13px; color:#14532d; margin:20px 0; }
+        .footer { background:#f8fafc; padding:20px 32px; text-align:center; font-size:12px; color:#94a3b8; border-top:1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div style="font-size:36px;margin-bottom:8px">⏰</div>
+        <h1>Rappel de Rendez-vous</h1>
+        <p>Votre consultation est prévue <strong>demain</strong></p>
+    </div>
+    <div class="body">
+        <p>Bonjour <strong>Omar El Idrissi</strong>,</p>
+        <p>Ceci est un rappel pour votre rendez-vous médical demain chez <strong>MedClinic</strong> :</p>
+
+        <div class="card">
+            <div class="card-row">
+                <span class="label">🩺 Médecin</span>
+                <span class="value">Dr. Dr. Youssef El Amrani</span>
+            </div>
+            <div class="card-row">
+                <span class="label">📅 Date</span>
+                <span class="value">Thursday 04 June 2026</span>
+            </div>
+            <div class="card-row">
+                <span class="label">🕐 Heure</span>
+                <span class="value">10:00</span>
+            </div>
+                        <div class="card-row">
+                <span class="label">📋 Motif</span>
+                <span class="value">Douleur abdominale, suivi médical général</span>
+            </div>
+                    </div>
+
+        <div class="tip">
+            💡 <strong>Conseils :</strong><br>
+            • Arrivez 10 minutes à l'avance<br>
+            • Apportez votre CIN et carnet de santé<br>
+            • En cas d'empêchement, annulez avant 24h
+        </div>
+
+        <p style="font-size:13px;color:#64748b">
+            Pour annuler ou modifier votre rendez-vous, contactez-nous au <strong>+212 5XX-XXXXXX</strong>.
+        </p>
+    </div>
+    <div class="footer">
+        <strong>MedClinic</strong> — Casablanca, Maroc<br>
+        Email automatique — Merci de ne pas répondre directement.
+    </div>
+</div>
+</body>
+</html>
+  
